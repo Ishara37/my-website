@@ -72,7 +72,8 @@
             <h2>Contact Me </h2>
              <div class="section-contact-me">
                 <h3>Write Me Your Message</h3>
-                <form action="https://formspree.io/f/xovwavwp" method="POST">
+                <!-- <form action="https://formspree.io/f/xovwavwp" method="POST"> -->
+                    <form id="contactForm">
 
                 <label for=" name"> Name</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
@@ -83,10 +84,14 @@
                 <label for="phone"> Phone</label>
                 <input type="text" id="phone" name="phone" placeholder="Enter your phone" required><br><br>
 
-                <label for=" Message" id="message1">Message</label><br>
+                <label for=" Message" id="message">Message</label><br>
                 <textarea id="Message" name="message" rows="5" placeholder="Write your message" required></textarea><br><br>
-                <button type="submit">Send</button>
+
+                <button type="submit"id ="submitBtn">Send</button>
+
                 <input type="hidden" name="_next" value="file:///C:/Users/TEST/Desktop/coding/Portfolio/index.html">
+                
+    <p id="responseMsg"></p>
 
 </form>
             </div>
